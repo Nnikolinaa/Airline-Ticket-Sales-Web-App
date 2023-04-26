@@ -1,0 +1,91 @@
+body {
+    background-color: #f2f2f2;
+}
+mat-card {
+    margin-top: 90px; /* adjust this value as needed */
+    padding-bottom: 1px;
+  }
+
+.container {
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+  
+mat-card-title{
+    color: #fff;
+    font-family: 'Sriracha', cursive;
+}
+
+mat-form-field {
+    width: 50%;
+    margin: 1px 5px;
+    margin-top: 18px;
+    margin-bottom: 1px;
+    padding: 1px 1px;
+    font-family: 'Sriracha', cursive;
+  }
+
+mat-card {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom: 1px;
+    height: 100%;
+    background-color: #e8dbf0;
+}
+  button[type="submit"] {
+    background-color:  #9b59b6;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+    font-family: 'Sriracha', cursive;
+  }
+  
+button[type="submit"]:hover {
+    background-color: #e1bee7;
+}
+
+button [type="submit"] {
+    background-color:  #9b59b6 ;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+  }
+  
+  
+button:hover {
+    background-color: #e1bee7;
+}
+  
+/* CSS for footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1bee7;
+    padding: 10px 5px;
+    margin-top: 1px;
+    bottom: 0;
+    position: fixed; /* add this property */
+    width: 100%;
+  }
+  
+  .footer .copy {
+    color: #fff;
+    margin: auto;
+  }

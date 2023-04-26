@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a routerLink="/home" class="logo">AirlineBooking</a>
+        <nav class="nav-items">
+          <a routerLink="/flightoffer">Flights</a>
+          <a *ngIf="!isLoggedIn()"routerLink="/login">Login</a>
+          <a *ngIf="isLoggedIn()" routerLink="/logout"(click)="logout()">Logout</a>
+          <a *ngIf="!isLoggedIn()" routerLink="/register">Register</a>
+          <a *ngIf="isLoggedIn()" routerLink="/ticketreservation">My Reservations</a>
+          <a *ngIf="isLoggedIn()">{{getLoggedInUserEmail()}}</a>
+        </nav>
+    </header>
+
+    <router-outlet></router-outlet>
+</body>
+</html>

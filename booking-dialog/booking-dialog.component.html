@@ -1,0 +1,17 @@
+<div class="booking-info">
+    <h1 mat-dialog-title>Booking Information</h1>
+    <mat-dialog-content>
+      <p><strong>Flight ID:</strong> {{ flightoffer_id }}</p>
+      <p><strong>Price:</strong> {{ formatPrice(price) }} </p>
+      <p><strong>Departure City:</strong> {{ departureCity }}</p>
+      <p><strong>Destination City:</strong> {{ destinationCity }}</p>
+      <p><strong>Departure Date:</strong> {{ departureDate }}</p>
+      <p><strong>Return Date:</strong> {{ returnDate }}</p>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-raised-button color="primary" (click)="bookNow()">Book Now</button>
+    </mat-dialog-actions>
+  </div>
+<footer class="footer">
+    <div class="copy">&copy; Nikolina Dinic - 2021230414</div>
+</footer>

@@ -1,0 +1,26 @@
+<div class="container">
+    <div *ngIf="reservations.length > 0" class="ticket-info">
+      <h1>Your Ticket Reservation Information</h1>
+      <p>You have {{reservations.length}} ticket reservations.</p>
+          <div class="reservations">
+      <div *ngFor="let reservation of reservations; let i = index" class="reservation">
+
+        <p><strong>Flight ID:</strong> {{ reservation._id }}</p>
+        <p><strong>Price:</strong> {{ reservation.price }}</p>
+        <p><strong>Departure City:</strong> {{ reservation.departureCity }}</p>
+        <p><strong>Destination City:</strong> {{ reservation.destinationCity }}</p>
+        <p><strong>Departure Date:</strong> {{ reservation.departureDate }}</p>
+        <p><strong>Return Date:</strong> {{ reservation.returnDate }}</p>
+        <button (click)="removeReservation(i, reservation._id)">Cancel</button>
+      </div>
+    </div>
+</div>
+    
+    <div *ngIf="reservations.length === 0" class="no-reservation">
+      <h1>You didn't reserve any ticket.</h1>
+    </div>
+  </div>
+  
+<footer class="footer">
+    <div class="copy">&copy; Nikolina Dinic - 2021230414</div>
+</footer>

@@ -1,0 +1,98 @@
+/* Center the content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px;
+    overflow: auto;
+    background-color: #e8dbf0;
+
+  }
+  
+  /* Style the ticket information */
+  .ticket-info {
+    margin-bottom: 30px;
+
+  }
+  
+  /* Style the heading */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Sriracha', cursive;
+  }
+
+  .reservations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: 'Sriracha', cursive;
+
+  }
+  
+  .reservation {
+    border: 2px solid #e1bee7;
+    border-radius: 15px;
+    border-style: double;
+    border-color: black;
+    padding: 20px;
+
+  }
+  
+  .reservation p {
+    margin: 0;
+    margin-bottom: 10px;
+
+  }
+  
+  /* Style the strong tags */
+  strong {
+    font-weight: bold;
+
+  }
+  
+  /* Style the message when there is no reservation */
+  .no-reservation {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+  }
+
+  button {
+    background-color: #9b59b6;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:15px;
+    font-family: 'Sriracha', cursive;
+  }
+
+  button:hover {
+    background-color: red;
+  }
+
+  /* CSS for footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1bee7;
+    padding: 10px 5px;
+    margin-top: 72px;
+    bottom: 0;
+    position: fixed; /* add this property */
+    width: 100%;
+  }
+  
+  .footer .copy {
+    color: #fff;
+    margin: auto;
+  }
